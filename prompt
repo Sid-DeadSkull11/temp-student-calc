@@ -1,0 +1,38 @@
+I have a practical exam where I must develop a Python Flask application, test it using pytest, containerize it using Docker, push it to GitHub, and deploy it using Kubernetes.
+
+Create the application according to these requirements.
+
+**Application details**
+- Application name: [APP NAME]
+- Push 1 features: [PUSH 1 REQUIREMENTS]
+- Push 2 features: [PUSH 2 REQUIREMENTS]
+
+**Requirements for app.py**
+1. Use Python and Flask to create a simple web application.
+2. Display a clear, menu-driven interface using HTML forms.
+3. Use POST requests for operations that submit data.
+4. Implement all Push 1 features correctly.
+5. Validate inputs, including missing values, invalid numbers, division by zero, negative values, or unavailable items wherever relevant.
+6. Display clear success and error messages.
+7. Preserve the application's state during normal use, as required by the problem.
+8. Keep the code beginner-friendly, simple, and suitable for a practical exam.
+9. Use `app.py` as the main file and run Flask on host `0.0.0.0`, port `5000`.
+10. Do not use a database or unnecessary libraries unless the question requires them.
+
+**Requirements for test_app.py**
+1. Import the Flask application from `app.py`.
+2. Use pytest and `app.test_client()`; do not start a separate Flask server.
+3. Write separate tests for the homepage, each Push 1 operation, valid inputs, invalid inputs, and expected output.
+4. Test important boundary cases and error handling.
+5. Reset application state before every test so tests are independent.
+6. Use assertions to verify HTTP status codes and response content.
+7. Make sure every test matches the actual routes, form field names, and messages implemented in `app.py`.
+8. Do not modify `app.py` just to make a test pass.
+9. Ensure all tests can run using `py -m pytest -v`.
+
+**Important instructions**
+- Generate complete, working `app.py` and `test_app.py` files.
+- Keep the code short and easy to understand.
+- Do not implement Push 2 features in the initial Push 1 version.
+- After generating the code, explain how to run it and list the expected results of the test cases.
+- Check for inconsistencies between the application and its tests before giving the final code.
